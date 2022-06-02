@@ -23,7 +23,7 @@ def report():
     "tickets": countTickets.execute(cursorTicket),
     "tickets_per_problem": ticketsPerProblem.execute(cursorProblem),
     "tickets_time_to_reserve": timeToReserveTicket.execute(cursorTimeReserve),
-    "timeToDone": timeToDone.execute(cursorTimeToDone)
+    "tickets_time_to_done": timeToDone.execute(cursorTimeToDone)
   }
 
   return json.dumps(organizedJson)
