@@ -6,7 +6,7 @@ def execute(cursorTicket):
   numberOfTicketDone = 0  
 
   for ticket in cursorTicket:
-    numberOfTickets += 0
+    numberOfTickets += 1
 
     if ticket["status"] == "awaiting":
       numberOfTicketAwaiting+=1
