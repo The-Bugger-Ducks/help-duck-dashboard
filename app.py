@@ -1,10 +1,10 @@
 from flask import Flask, jsonify
 
-from src.routes.exampleRoutes import example
+from src.routes.dashboardRoutes import dashboard
 
 app = Flask(__name__)
 
-app.register_blueprint(example, url_prefix='/example')
+app.register_blueprint(dashboard, url_prefix='/dashboard')
 
 @app.route('/')
 def test():
