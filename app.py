@@ -1,11 +1,9 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
-from flask_restful import Api
 
 from src.routes.exampleRoutes import example
 
 app = Flask(__name__)
-api = Api(app)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
