@@ -4,8 +4,6 @@ from flask_cors import CORS
 from src.routes.exampleRoutes import example
 
 app = Flask(__name__)
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
 
 app.register_blueprint(example, url_prefix='/example')
 
