@@ -12,11 +12,12 @@ ticketCollection = db.ticket
 def report():
   cursorUser = userCollection.find()
   cursorTicket = ticketCollection.find()
+  cursorProblem = ticketCollection.find()
 
   organizedJson = {
     "users": countUsers.execute(cursorUser),
     "tickets": countTickets.execute(cursorTicket),
-    "tickets_per_problem": ticketsPerProblem.execute(cursorTickets)
+    "tickets_per_problem": ticketsPerProblem.execute(cursorProblem)
   }
 
   return json.dumps(organizedJson)

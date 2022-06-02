@@ -1,5 +1,4 @@
-def execute(cursorTickets):
-  
+def execute(cursorTicket):
   numberOfNetworkAccess = 0
   numberOfSoftwareMalfunction = 0
   numberOfEmailAccess = 0
@@ -9,8 +8,8 @@ def execute(cursorTickets):
   numberOfDamagedEquipment = 0
   numberOfNetworkAccess = 0
   numberOfOthers = 0
-
-  for ticket in cursorTickets:
+  
+  for ticket in cursorTicket:
     if ticket["problem"]["title"] == "Acesso a rede":
       numberOfNetworkAccess+=1
     if ticket["problem"]["title"]  == "Mau funcionamento de software":
