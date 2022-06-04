@@ -1,5 +1,5 @@
 <h1 align="center"> 
-  Microsserviço para manipulação de chamados
+  Microsserviço para Relatório Geral do Sistema
 </h1>
 
 Esta API, que permite o visualização de dados gerais sobre o sistema (ex: total de chamados, usuários por cargos, etc.), foi desenvolvida visando sua utilização no projeto "Help Duck" (mais informações vide [este link](https://github.com/The-Bugger-Ducks/help-duck-documentation)).
