@@ -1,9 +1,25 @@
-# Backend
+<h1 align="center"> 
+  Microsserviço para manipulação de chamados
+</h1>
 
-Neste guia iremos configurar o ambiente de desenvolvimento com a instalação e configuração de um ambiente isolado, instalação dos requisitos do projeto, instalação e utilização do Flask e utilização do MongoDB.
+Esta API, que permite o visualização de dados gerais sobre o sistema (ex: total de chamados, usuários por cargos, etc.), foi desenvolvida visando sua utilização no projeto "Help Duck" (mais informações vide [este link](https://github.com/The-Bugger-Ducks/help-duck-documentation)).
 
+> Aplicação desenvolvida por alunos do 3º semestre do tecnólogo em Desenvolvimento de Software Multiplataforma, na FATEC Profº Jessen Vidal - São José dos Campos, SP :rocket:
+
+### :hammer_and_wrench: Tecnologias
+
+As seguintes tecnologias e ferramentas foram utilizadas neste projeto: `Python, Flask, MongoDB, Docker,Insomnia, Heroku`
 
 ---
+
+## :railway_track: Rotas disponíveis
+<div align="center">
+  
+O servidor inciará localmente na porta 5000. Use o Insomnia para simular requisições e respostas das rotas (pelo link [https://localhost:5000](https://localhost:5000)) ou utilize o projeto front-end do "Help Duck" para executar as funcionalidades da aplicação (acesse o repositório por [este link](https://github.com/The-Bugger-Ducks/help-duck-web)).
+
+|                                                                    Tipo | Rota                                 | Ação                            |
+| ----------------------------------------------------------------------: | :----------------------------------- | :------------------------------ |
+|    [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/dashboard/report`                  | Visualização do relatório       |
 
 ### Requisitos mínimos
 
@@ -131,13 +147,6 @@ Siga a documentação oficial do insomnia caso você não tenha instalado:_
 Caso você não conheça esse software veja o link a seguir para aprender:_
 
 [Get Started - insomnia](https://docs.insomnia.rest/insomnia/send-your-first-request)
-
-Você pode baixar e importar no insomnia a configuração de ambiente que deixei na pasta raiz do projeto. Caso tenha alguma dúvida de como importar essa configuração, leia o link abaixo.
-
-[Import and Export Data - insomnia](https://docs.insomnia.rest/insomnia/import-export-data)
-
-
-**/Insomnia_2022-04-25.json**
 
 ---
 
