@@ -13,13 +13,35 @@ As seguintes tecnologias e ferramentas foram utilizadas neste projeto: `Python, 
 ---
 
 ## :railway_track: Rotas disponíveis
-<div align="center">
   
 O servidor inciará localmente na porta 5000. Use o Insomnia para simular requisições e respostas das rotas (pelo link [https://localhost:5000](https://localhost:5000)) ou utilize o projeto front-end do "Help Duck" para executar as funcionalidades da aplicação (acesse o repositório por [este link](https://github.com/The-Bugger-Ducks/help-duck-web)).
+
+<div align="center">
 
 |                                                                    Tipo | Rota                                 | Ação                            |
 | ----------------------------------------------------------------------: | :----------------------------------- | :------------------------------ |
 |    [![](https://img.shields.io/badge/GET-2E8B57?style=for-the-badge)]() | `/dashboard/report`                  | Visualização do relatório       |
+
+</div>
+
+</div>
+
+### Explicação da estrutura das pastas
+
+| Pasta                                                     | Definição                                                                        |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| :open_file_folder: src/                                   | Arquivos com o código fonte do projeto                                           |
+| :open_file_folder: src/controller                         | Arquivos para metodos de cada endpoint da API                                    |
+| :open_file_folder: src/models                             | Arquivos para execução de calculos ou processos para o controller                |
+| :open_file_folder: src/models/tickets                     | Arquivos para execução de calculos ou processos que tenha como centro os chamados|
+| :open_file_folder: src/models/tickets                     | Arquivos para execução de calculos ou processos que tenha como centro os usuários|
+| :open_file_folder: src/routes                             | Arquivos gerenciadores de rotas para os endpoints da aplicação                   |
+| :page_facing_up: connectDb.py                             | Arquivo para conexão com o banco de dados MongoDB                                |
+| :page_facing_up: connectRedis.py                          | Arquivo para conexão com o banco de dados Redis                                  |
+| :page_facing_up: app.py                                   | Arquivo principal do projeto                                                     |
+| :page_facing_up: Procfile                                 | Arquivo usado para indicar para o Heroku cofigurações de inicialização do server |
+| :page_facing_up: requirements.txt                         | Arquivo usado gerenciar as dependencias do projeto                               |
+
 
 ### Requisitos mínimos
 
@@ -149,5 +171,7 @@ Caso você não conheça esse software veja o link a seguir para aprender:_
 [Get Started - insomnia](https://docs.insomnia.rest/insomnia/send-your-first-request)
 
 ---
+
+Para consumir esta API, é preciso seguir o passo a passo abaixo ou utilizar a URL do serviço em nuvem (através deste link, desde que de posse do token de autorização: https://help-duck-dashboard.herokuapp.com).
 
 Caso tenha algum problema no processo, entre em contato.
