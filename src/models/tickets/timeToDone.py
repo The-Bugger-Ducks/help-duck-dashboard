@@ -25,6 +25,6 @@ def execute(cursorTimeToDone):
   minutos = segundos_rest / 60
    
   if (minutos < 10):
-    return f'{int(horas)}h:0{round(minutos)}min'
+    return f'{int(horas)}h0{round(minutos)}min'
 
-  return f'{int(horas)}h:{round(minutos)}min'
+  return f'{int(horas)}h{round(minutos)}min'
